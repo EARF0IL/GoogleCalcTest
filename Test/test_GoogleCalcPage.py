@@ -1,16 +1,16 @@
 import sys
 sys.path.append(sys.path[0] + "/..")
 
-from src.TestBase.WebDriverSetup import WebDriverSetup
-from src.PageObject.Pages.GoogleCalcPage import CalcPage
-from src.PageObject.Pages.GoogleHomePage import HomePage
-import pytest
-from selenium import webdriver
+import pytest  # noqa
+from selenium import webdriver  # noqa
+from src.TestBase.WebDriverSetup import WebDriverSetup  # noqa
+from src.PageObject.Pages.GoogleCalcPage import CalcPage  # noqa
+from src.PageObject.Pages.GoogleHomePage import HomePage  # noqa
 
 
 class TestGoogleCalcPage(WebDriverSetup):
     def test_calc_page(self):
-        self.driver.get("http://google.com")
+        self.driver.get("http://google.com")  # noqa
         self.driver.set_page_load_timeout(30)
 
         assert self.driver.title == "Google"

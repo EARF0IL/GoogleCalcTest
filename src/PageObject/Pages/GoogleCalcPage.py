@@ -1,8 +1,8 @@
 import sys
 sys.path.append(sys.path[0] + "/....")
 
-from selenium.webdriver.common.by import By
-from src.PageObject.Locators import GoogleCalcPageLocator
+from selenium.webdriver.common.by import By  # noqa
+from src.PageObject.Locators import GoogleCalcPageLocator  # noqa
 
 
 class CalcPage:
@@ -18,6 +18,3 @@ class CalcPage:
         for i in range(2, 6):
             self.algebraic_buttons.append(driver.find_element(By.XPATH,
                                                               GoogleCalcPageLocator.algebraic_button.format(i)))
-
-
-

@@ -6,7 +6,7 @@ import urllib3
 class WebDriverSetup:
     def setup(self):
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome()  # noqa
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
 
