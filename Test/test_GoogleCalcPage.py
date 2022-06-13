@@ -1,5 +1,5 @@
 import sys
-sys.path.append(sys.path[0] + "/../..")
+sys.path.append(sys.path[0] + "/..")
 
 from src.TestBase.WebDriverSetup import WebDriverSetup
 from src.PageObject.Pages.GoogleCalcPage import CalcPage
